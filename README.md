@@ -1,6 +1,6 @@
-# home-mirror
+# Jarvis Mirror
 
-> Home Mirror
+![Jarvis](/git-image/jarvis-v1.jpg)
 
 ## Build Setup
 
