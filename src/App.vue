@@ -3,6 +3,8 @@
     <h2>{{ date | moment("dddd, MMMM Do YYYY") }}</h2>
     <h1>{{ date | moment("h:mm:ss a") }}</h1>
 
+    <p>Hai: {{ brightness }}</p>
+
     <TimeMessage :date="date" />
     <BirthdayReminder :date="date" />
     <Weather />
@@ -12,7 +14,7 @@
 </template>
 
 <script>
-  const mediaAudio = require('./media');
+  const MEDIA_AUDIO = require('./media');
 
   import TimeMessage from './TimeMessage'
   import BirthdayReminder from './BirthdayReminder'
@@ -28,9 +30,10 @@
     },
     data () {
       return {
-        mediaAudio: mediaAudio,
+        mediaAudio: MEDIA_AUDIO,
         videoElement: null,
-        date: null
+        date: null,
+        brightness: null
       }
     },
     created() {
